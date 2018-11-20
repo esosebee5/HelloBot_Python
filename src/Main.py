@@ -14,9 +14,10 @@ state = True
 ########
 
 def main():
+    print("Welcome to the Python HelloBot Project!")
+    print()
     global name
     name = input("Enter your name: ")
-    print()
     print("Hello, " + name + ".")
     print()
 
@@ -102,7 +103,7 @@ def getDay(num_days):
     if num_days == 28:
         num_days = num_days + 1
     while day < 1 or day > num_days:
-        day_str = input("Enter a valid day of the month: ")
+        day_str = input("Enter the day of the month: ")
         day = getIsInt(day_str)
     return day
 
